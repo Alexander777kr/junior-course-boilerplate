@@ -1,0 +1,19 @@
+.mainHeader {
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.content {
+  max-width: 20%;
+  margin: 0 auto;
+}
+
+.list {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  margin-bottom: 20px;
+}
