@@ -1,10 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import products from "./products";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import products from './products';
 
 const App = () => {
-  const filteredProducts = products.filter(product => product.id < 4);
+  const filteredProducts = products.slice(0, 3);
   return (
     <div className="app">
       <div className="content">
@@ -21,4 +21,4 @@ const App = () => {
   );
 };
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
