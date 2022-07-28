@@ -1,22 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import products from './products';
+import Main from './pages/main';
 
 const App = () => {
-  const filteredProducts = products.slice(0, 3);
+
+
   return (
     <div className="app">
-      <div className="content">
-        <h1 className="mainHeader">Список товаров</h1>
-        <ul className="list">
-          {filteredProducts.map(product => (
-            <li className="list-item" key={product.id}>
-              {product.name}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <Main />
     </div>
   );
 };
