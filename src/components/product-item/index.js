@@ -7,7 +7,7 @@ const range = to => [...Array(to).keys()].map(i => i + 1)
 
 function ProductItem({ isInStock, img, title, price, subPriceContent, maxRating, rating, ratingComponent }) {
     return (
-        <div className={cx(s.goods, { [s.goodsNone]: !isInStock })}>
+        <li className={cx(s.goods, { [s.goodsNone]: !isInStock })}>
             <div className={cx(s.goodsType, { [s.goodsTypeNone]: !isInStock })}>
                 {isInStock ? 'В наличии' : 'Недоступен'}
             </div>
@@ -28,7 +28,7 @@ function ProductItem({ isInStock, img, title, price, subPriceContent, maxRating,
                 {price} ₽ <span className={s.goodsSubPrice}>{subPriceContent > 0 && `${subPriceContent} ₽`}</span></div>
 
 
-        </div>
+        </li>
     );
 };
 
